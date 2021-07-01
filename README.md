@@ -4,6 +4,11 @@ This package include some JWT operations.
 ## Install 
 go get github.com/aliicoban/jwt-go-cobra
 
+## Import 
+import (
+	"github.com/aliicoban/jwt-go-cobra"
+)
+
 ## Usage 
 
 jwtgocobra.MethodName
