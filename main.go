@@ -94,7 +94,7 @@ func TokenValid(tokenString string) (error, bool) {
 /*
 Send token and getting the user id.
 */
-func getUserIdByToken(token *jwt.Token) interface{} {
+func GetUserIdByToken(token *jwt.Token) interface{} {
 	claims, _ := token.Claims.(jwt.MapClaims)
 	fmt.Println("USERID", claims["user_id"])
 	return claims["user_id"]
