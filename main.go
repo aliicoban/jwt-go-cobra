@@ -12,7 +12,7 @@ import (
 /*
 Create token by user id.If operation is success return token.Otherwise return error.
 */
-func CreateToken(userid uint64, expireTime ...time.Duration) (string, error) {
+func CreateToken(userid interface{}, expireTime ...time.Duration) (string, error) {
 	var setTimeOut time.Duration = 0
 	var err error
 
